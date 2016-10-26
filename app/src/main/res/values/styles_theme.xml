@@ -1,0 +1,36 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1.0风格 -->
+    <style name="MyThemeNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="StatusBarColor">@color/tljr_pro_red</item>
+        <item name="TitleHeight">50dip</item>
+        <item name="TitleTextSize">18sp</item>
+        <item name="TitleTextColor">@color/white</item>
+        <item name="android:textColor">@color/default_text</item>
+        <item name="android:textColorHint">@color/tljr_text_tishi</item>
+        <item name="TitleBj">@drawable/img_dingtiao</item>
+        <item name="BackIcon">@drawable/img_fanhui</item>
+        <item name="avatarbj">@drawable/img_touxiang1</item>
+        <item name="TitleBGColor">@color/tljr_statusbarcolor</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowActionBar">false</item>
+
+    </style>
+
+    <style name="MyThemeNight2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="StatusBarColor">@color/tljr_pro_red</item>
+        <item name="TitleHeight">50dip</item>
+        <item name="TitleTextSize">18sp</item>
+        <item name="TitleTextColor">@color/white</item>
+        <item name="android:textColor">@color/default_text</item>
+        <item name="android:textColorHint">@color/tljr_text_tishi</item>
+        <item name="TitleBj">@drawable/img_dingtiao</item>
+        <item name="BackIcon">@drawable/img_fanhui</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="avatarbj">@drawable/img_touxiang1</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+</resources>

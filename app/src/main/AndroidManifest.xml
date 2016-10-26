@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abcs.huaqiaobang.yiyuanyungou">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <!-- <meta-data -->
+    <!-- android:name="UMENG_CHANNEL" -->
+    <!-- android:value="${UMENG_CHANNEL_VALUE}" /> -->
+
+
+
+    <!-- 富有支付 -->
+
+    <uses-permission android:name="com.fuiou.permission.FUIOU_PAY" />
+    <!-- 富有支付end -->
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+
+    <!-- 友盟必选 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许程序打开网络sockets -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序访问有关的网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!-- 允许应用写（非读）用户的外部存储器 -->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!-- 允许读取电话的状态 -->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!-- 允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 允许应用程序修改全局声音设置的权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 允许使用PowerManager的WakeLocks保持进程在休眠时从屏幕消失 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 允许请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许程序连接到已配对的蓝牙设备(非必选,由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 允许程序发现和配对蓝牙设备(非必选,由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- GPS定位权限(非必选，由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 允许一个程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!-- 允许一个程序访问精良位置(如GPS) -->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!-- 允许程序读取用户联系人数据(非必选，由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 允许访问振动设备(非必选,由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许程序禁用键盘锁(非必选,由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许一个程序接收到 ACTION_BOOT_COMPLETED广播在系统完成启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <!-- Android 6.0无法拿到以下权限 -->
+    <!-- <permission -->
+    <!-- android:name="com.umeng.message.example.permission.MIPUSH_RECEIVE" -->
+    <!-- android:protectionLevel="signatureOrSystem" /> -->
+
+
+    <!-- <uses-permission android:name="com.umeng.message.example.permission.MIPUSH_RECEIVE" /> -->
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 百度lbs -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyThemeNight">
+        <activity android:name=".yyg.activity.YYGActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".yyg.activity.YYGGoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".yyg.activity.YYGBuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".yyg.activity.MyYYGActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".yyg.activity.YYGPreRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".yyg.activity.YYGSetAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".yyg.activity.LotteryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditBindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PhotoPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoticeDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".activity.KefuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+
+        <activity
+            android:name=".activity.PayWayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FuyouPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".yyg.activity.YYGMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".yyg.activity.YYGBalanceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsGuaranteeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 腾讯 start。。。。。 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                 例如你的AppId是”222222″，则<data>标签应该是这样的：
+                 <data android:scheme="tencent222222" />
+                 <data android:scheme="tencent1104538121" />
+                -->
+                <data android:scheme="tencent1104982229" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!-- 腾讯 end。。。。。 -->
+    </application>
+
+
+</manifest>
